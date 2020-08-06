@@ -3,6 +3,7 @@ from django.urls import path,include
 from .views import *
 
 urlpatterns = [
+    path('',admin.site.urls),
     path('app/',CourseAPI.as_view(),name='list'),
     path('app/<int:id>/',CourseDetailAPI.as_view(),name='by_id')
 ]
