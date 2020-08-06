@@ -25,7 +25,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG',cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kudicourserapp.herokuapp.com']
 
 
 # Application definition
@@ -134,5 +134,3 @@ STATICFILES_DIRS = (
 
 #  Add configuration for static files storage using whitenoise
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
-ALLOWED_HOSTS = ['kudicourseapp.herokuapp.com']
