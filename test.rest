@@ -1,0 +1,36 @@
+### GET
+GET http://127.0.0.1:8000/app/ HTTP/1.1
+
+### GET with id
+GET http://127.0.0.1:8000/app/2/ HTTP/1.1
+
+### COURSE delete with id
+### DELETE driving
+DELETE  http://127.0.0.1:8000/app/1/ HTTP/1.1
+
+### COURSE post
+POST http://127.0.0.1:8000/app/ HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Driving",
+    "description":"Drive like PRO",
+    "category":{
+        "name":"Driving course",
+        "imgpath":"imageofcar"
+    },
+    "logo":"FAST AND FURIOUS",
+    "branch_set":[
+        {
+            "latitude":"38.8951",
+            "longtitude": "-77.0364",
+            "address":"str.Povorot"
+        }
+    ],
+    "contact":[
+    {
+        "type":2,
+        "value":"postdriving@gmail.com"
+    }
+    ]
+}
