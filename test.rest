@@ -1,15 +1,15 @@
 ### GET
-GET http://127.0.0.1:8000/app/ HTTP/1.1
+GET http://kudicourserapp.herokuapp.com/app/ HTTP/1.1
 
 ### GET with id
-GET http://127.0.0.1:8000/app/2/ HTTP/1.1
+GET http://kudicourserapp.herokuapp.com/app/2/ HTTP/1.1
 
 ### COURSE delete with id
 ### DELETE driving
-DELETE  http://127.0.0.1:8000/app/1/ HTTP/1.1
+DELETE  https://kudicourserapp.herokuapp.com/app/34/ HTTP/1.1
 
 ### COURSE post
-POST http://127.0.0.1:8000/app/ HTTP/1.1
+POST https://kudicourserapp.herokuapp.com/app/ HTTP/1.1
 content-type: application/json
 
 {
